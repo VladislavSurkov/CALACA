@@ -1,13 +1,15 @@
-function App() {
+import Plug from "pages/Plug/Plug";
+import { Routes, Route } from "react-router-dom";
+
+const App = () => {
   return (
-    <div>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Plug />} />
+        <Route path="*" element={<Plug />} />
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;
