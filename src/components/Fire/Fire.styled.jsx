@@ -43,7 +43,7 @@ export const FireContainer = styled.div`
   position: relative;
   width: 860px;
   height: 310px;
-  margin-top: 640px;
+  margin-top: 165px;
 `;
 export const FireComp = styled.div`
   width: 200px;
