@@ -2,11 +2,12 @@ import styled from "styled-components";
 import background from "../../img/plug-background.png";
 
 export const PlugContainer = styled.div`
+  display: flex;
+  justify-content: center;
   background-image: url(${background});
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 1920px;
   height: 1080px;
 `;
 
@@ -38,3 +39,4 @@ export const SubTitle = styled.h2`
   font-size: 28px;
   margin: 0;
 `;
+

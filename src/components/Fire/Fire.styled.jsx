@@ -3,53 +3,55 @@ import fire from "../../img/animation/fire.png";
 
 const POSITION = {
   center: css`
-    position: absolute;
-    top: 560px;
-    left: 855px;
+    top: 5%;
+    left: 49%;
+    transform: translate(-50%, -50%);
   `,
   firstLeft: css`
-    position: absolute;
-    top: 555px;
-    left: 525px;
-    transform: rotateY(40deg);
+    top: 3%;
+    left: 11%;
+    transform: translate(-50%, -50%) rotateY(40deg);
   `,
   secondLeft: css`
-    position: absolute;
-    top: 610px;
-    left: 450px;
-    transform: rotateY(50deg);
+    top: 22%;
+    left: 3%;
+    transform: translate(-50%, -50%) rotateY(60deg);
   `,
   firstRight: css`
-    position: absolute;
-    top: 555px;
-    left: 1200px;
-    transform: rotateY(40deg);
+    top: 3%;
+    left: 90%;
+    transform: translate(-50%, -50%) rotateY(40deg);
   `,
   secondRight: css`
-    position: absolute;
-    top: 650px;
-    left: 1250px;
-    transform: rotateY(50deg);
+    top: 32%;
+    left: 95%;
+    transform: translate(-50%, -50%) rotateY(60deg);
   `,
   thirdLeft: css`
-    position: absolute;
-    top: 750px;
-    left: 612px;
-    transform: rotateY(60deg);
+    top: 64%;
+    left: 22%;
+    transform: translate(-50%, -50%) rotateY(30deg);
   `,
   thirdRight: css`
-    position: absolute;
-    top: 760px;
-    left: 1020px;
-    transform: rotateY(30deg);
+    top: 74%;
+    left: 71%;
+    transform: translate(-50%, -50%) rotateY(30deg);
   `,
 };
 
+export const FireContainer = styled.div`
+  position: relative;
+  width: 860px;
+  height: 310px;
+  margin-top: 640px;
+`;
 export const FireComp = styled.div`
   width: 200px;
   height: 200px;
+  position: absolute;
   background-image: url(${fire});
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   ${(props) => props.position && POSITION[props.position]};
 `;
