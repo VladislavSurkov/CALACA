@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import background from "../../img/plug-background.png";
+import background from "../../img/bg/plug-background.png";
 
 export const PlugContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 1080px;
-  
+
   background-image: url(${background});
   background-size: cover;
   background-repeat: no-repeat;
