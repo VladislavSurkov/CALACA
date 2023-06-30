@@ -18,13 +18,13 @@ export const Title = styled.h1`
 
   font-family: "ST-SimpleSquare";
   font-weight: 500;
-  font-size: 120px;
+  font-size: 110px;
   line-height: 0.9;
   text-align: center;
   overflow-wrap: break-word;
 
   max-width: 1200px;
-  margin: 190px 0 40px 0;
+  margin: 0 0 40px 0;
 
   color: #eee3ff;
 `;
@@ -33,10 +33,17 @@ export const SubTitle = styled.h2`
   font-family: "Roboto Condensed";
   color: #eee3ff;
   font-weight: 700;
-  text-align: center;
-  letter-spacing: 30px;
+  letter-spacing: 28px;
   -webkit-text-stroke: 1px black;
 
-  font-size: 28px;
+  font-size: 36px;
   margin: 0;
+  padding-left: 28px;
 `;
+
+export const Logo = styled.img`
+width: 210px;
+height: 90px;
+margin-bottom: 50px;
+margin-top: 60px;
+`
