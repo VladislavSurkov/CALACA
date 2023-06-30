@@ -1,10 +1,12 @@
 import Fire from "components/Fire/Fire";
-import { PlugContainer } from "./Plug.styled";
+import { PlugContainer, SubTitle, Title } from "./Plug.styled";
 
 const Plug = () => {
   return (
     <PlugContainer>
-      <Fire/>
+     <Title>SHAPE YOUR DESTINY</Title>
+     <SubTitle>COMING SOON</SubTitle>
+     <Fire/>
     </PlugContainer>
   );
 };
