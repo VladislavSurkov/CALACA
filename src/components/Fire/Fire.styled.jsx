@@ -81,7 +81,7 @@ const IMAGE = {
 };
 
 export const FireContainer = styled.div`
-  bottom: 11%;
+  bottom: 11.5%;
   width: 370px;
   height: 310px;
 
