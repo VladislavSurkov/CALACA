@@ -5,7 +5,7 @@ import CalacaLogo from "../../img/LOGO.png"
 const Plug = () => {
   return (
     <PlugContainer>
-    <Logo src={CalacaLogo} alt="Calaca"/>
+    <Logo src={CalacaLogo} alt="Logo Calaca"/>
       <Title>SHAPE YOUR DESTINY</Title>
       <SubTitle>COMING SOON</SubTitle>
       <Fire />
