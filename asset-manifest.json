@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/CALACA/static/css/main.8d9f178e.css",
-    "main.js": "/CALACA/static/js/main.6007027d.js",
-    "static/media/plug-background.png": "/CALACA/static/media/plug-background.648298bfaf07a3952e7b.png",
+    "main.js": "/CALACA/static/js/main.98d467e1.js",
+    "static/media/bg-desktop.png": "/CALACA/static/media/bg-desktop.648298bfaf07a3952e7b.png",
     "static/media/fire.png": "/CALACA/static/media/fire.08df848734d70147faf1.png",
+    "static/media/bg-mobile.png": "/CALACA/static/media/bg-mobile.5bbbd9928f6576d114ab.png",
     "static/media/RobotoCondensed-Bold.woff": "/CALACA/static/media/RobotoCondensed-Bold.14a7047141f97b966d40.woff",
     "static/media/RobotoCondensed-Regular.woff": "/CALACA/static/media/RobotoCondensed-Regular.25787041ddfe8df69d5d.woff",
     "static/media/LOGO.png": "/CALACA/static/media/LOGO.34ef4793f10bf551bb91.png",
     "static/media/ST-SimpleSquare.woff2": "/CALACA/static/media/ST-SimpleSquare.48a1dcf288277de6534d.woff2",
     "index.html": "/CALACA/index.html",
     "main.8d9f178e.css.map": "/CALACA/static/css/main.8d9f178e.css.map",
-    "main.6007027d.js.map": "/CALACA/static/js/main.6007027d.js.map"
+    "main.98d467e1.js.map": "/CALACA/static/js/main.98d467e1.js.map"
   },
   "entrypoints": [
     "static/css/main.8d9f178e.css",
-    "static/js/main.6007027d.js"
+    "static/js/main.98d467e1.js"
   ]
 }
