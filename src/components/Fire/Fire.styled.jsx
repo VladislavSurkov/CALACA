@@ -40,10 +40,14 @@ const POSITION = {
 };
 
 export const FireContainer = styled.div`
-  position: relative;
+  position: absolute;
+  bottom: 20%;
   width: 860px;
   height: 310px;
-  margin-top: 165px;
+
+  @media (min-width: 468px) {
+    bottom: 12%;
+  }
 `;
 export const FireComp = styled.div`
   width: 200px;

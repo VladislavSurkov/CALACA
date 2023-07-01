@@ -3,6 +3,7 @@ import backgroundDesktop from "../../img/bg/bg-desktop.png";
 import backgroundMobile from "../../img/bg/bg-mobile.png";
 
 export const PlugContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
