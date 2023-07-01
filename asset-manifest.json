@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CALACA/static/css/main.fd006fd1.css",
+    "main.css": "/CALACA/static/css/main.51ee32ce.css",
     "main.js": "/CALACA/static/js/main.6007027d.js",
     "static/media/plug-background.png": "/CALACA/static/media/plug-background.648298bfaf07a3952e7b.png",
     "static/media/fire.png": "/CALACA/static/media/fire.08df848734d70147faf1.png",
@@ -8,11 +8,11 @@
     "static/media/LOGO.png": "/CALACA/static/media/LOGO.34ef4793f10bf551bb91.png",
     "static/media/ST-SimpleSquare.woff2": "/CALACA/static/media/ST-SimpleSquare.48a1dcf288277de6534d.woff2",
     "index.html": "/CALACA/index.html",
-    "main.fd006fd1.css.map": "/CALACA/static/css/main.fd006fd1.css.map",
+    "main.51ee32ce.css.map": "/CALACA/static/css/main.51ee32ce.css.map",
     "main.6007027d.js.map": "/CALACA/static/js/main.6007027d.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd006fd1.css",
+    "static/css/main.51ee32ce.css",
     "static/js/main.6007027d.js"
   ]
 }
