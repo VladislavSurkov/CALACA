@@ -1,11 +1,18 @@
 import styled, { css } from "styled-components";
-import fire from "../../img/animation/fire.png";
+import firea from "../../img/animation/firea.png";
+import fireb from "../../img/animation/fireb.png";
 
 const POSITION = {
   center: css`
-    top: 5%;
-    left: 49%;
+    width: 200px;
+    height: 200px;
+    left: 49.5%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: 468px) {
+      width: 350px;
+      height: 350px;
+    }
   `,
   firstLeft: css`
     top: 3%;
@@ -28,34 +35,78 @@ const POSITION = {
     transform: translate(-50%, -50%) rotateY(60deg);
   `,
   thirdLeft: css`
-    top: 64%;
-    left: 22%;
+    top: 43%;
+    left: 31%;
     transform: translate(-50%, -50%) rotateY(30deg);
+
+    ${'' /* @media (min-width: 415px) {
+      top: 45%;
+      left: 30%;
+    }
+    @media (min-width: 440px) {
+      top: 45%;
+      left: 30%;
+    } */}
+
+    @media (min-width: 468px) {
+      top: 64%;
+      left: 22%;
+    }
   `,
   thirdRight: css`
-    top: 74%;
-    left: 71%;
+    top: 48%;
+    left: 64%;
     transform: translate(-50%, -50%) rotateY(30deg);
+
+    ${'' /* @media (min-width: 415px) {
+      top: 50%;
+      left: 65%;
+    }
+    @media (min-width: 440px) {
+      top: 50%;
+      left: 65%;
+    } */}
+
+    @media (min-width: 468px) {
+      top: 74%;
+      left: 71%;
+    }
+  `,
+};
+
+const IMAGE = {
+  first: css`
+    background-image: url(${firea});
+  `,
+  second: css`
+    background-image: url(${fireb});
   `,
 };
 
 export const FireContainer = styled.div`
-  position: absolute;
-  bottom: 20%;
-  width: 860px;
+  bottom: 8.5%;
+  width: 370px;
   height: 310px;
 
-  @media (min-width: 468px) {
-    bottom: 12%;
+  @media (min-width: 467px) {
+    position: absolute;
+    bottom: 10%;
+    width: 860px;
   }
 `;
 export const FireComp = styled.div`
-  width: 200px;
-  height: 200px;
   position: absolute;
-  background-image: url(${fire});
+
+  width: 140px;
+  height: 140px;
+
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (min-width: 468px) {
+    width: 200px;
+    height: 200px;
+  }
   ${(props) => props.position && POSITION[props.position]};
+  ${(props) => props.image && IMAGE[props.image]};
 `;
