@@ -6,8 +6,13 @@ const POSITION = {
   center: css`
     width: 200px;
     height: 200px;
+    top: 55%;
     left: 49.5%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 415px), (min-width: 468px) {
+      top: 1%;
+    }
 
     @media (min-width: 468px) {
       width: 350px;
@@ -35,18 +40,14 @@ const POSITION = {
     transform: translate(-50%, -50%) rotateY(60deg);
   `,
   thirdLeft: css`
-    top: 43%;
-    left: 31%;
+    bottom: 12.3%;
+    left: 9%;
     transform: translate(-50%, -50%) rotateY(30deg);
 
-    ${'' /* @media (min-width: 415px) {
-      top: 45%;
-      left: 30%;
+    @media (max-width: 415px), (min-width: 468px) {
+      bottom: 6%;
+      left: 4%;
     }
-    @media (min-width: 440px) {
-      top: 45%;
-      left: 30%;
-    } */}
 
     @media (min-width: 468px) {
       top: 64%;
@@ -54,18 +55,14 @@ const POSITION = {
     }
   `,
   thirdRight: css`
-    top: 48%;
-    left: 64%;
+    bottom: 10.6%;
+    left: 81%;
     transform: translate(-50%, -50%) rotateY(30deg);
 
-    ${'' /* @media (min-width: 415px) {
-      top: 50%;
-      left: 65%;
+    @media (max-width: 415px), (min-width: 468px) {
+      bottom: 0%;
+      left: 84%;
     }
-    @media (min-width: 440px) {
-      top: 50%;
-      left: 65%;
-    } */}
 
     @media (min-width: 468px) {
       top: 74%;
@@ -84,12 +81,15 @@ const IMAGE = {
 };
 
 export const FireContainer = styled.div`
-  bottom: 8.5%;
+  bottom: 11%;
   width: 370px;
   height: 310px;
 
-  @media (min-width: 467px) {
+  @media (max-width: 415px), (min-width: 468px) {
     position: absolute;
+  }
+
+  @media (min-width: 467px) {
     bottom: 10%;
     width: 860px;
   }
@@ -97,8 +97,8 @@ export const FireContainer = styled.div`
 export const FireComp = styled.div`
   position: absolute;
 
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
 
   background-size: cover;
   background-repeat: no-repeat;
