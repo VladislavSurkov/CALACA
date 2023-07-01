@@ -8,20 +8,26 @@ export const SocialMediaList = styled.ul`
   align-items: center;
   width: 346px;
   height: 88px;
-  position: absolute;
-  bottom: 28px;
+  margin-top: 60px;
+  z-index: 2;
+  
 
+  @media screen and (max-width: 468px) {
+    position: absolute;
+    bottom: 28px;
+  }
 `;
 
 export const SocialMediaItem = styled.li`
   list-style: none;
   text-align: center;
+  cursor: pointer;
   @media screen and (min-width: 468px) {
     &:nth-child(2) {
       margin-right: 50px;
     }
   }
-  transition:all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 
   &:hover {
     transform: scale(1.1);

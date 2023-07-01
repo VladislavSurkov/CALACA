@@ -40,9 +40,9 @@ const SocialMedia = () => {
     <SocialMediaList>
       {socials.map((social) => {
         return (
-          <SocialMediaItem>
+          <SocialMediaItem key={social.name}>
             <SocialMediaLink href={social.link}>
-              <img src={social.img} alt={social.name} style={socialMargin}/>
+              <img src={social.img} alt={social.name} style={socialMargin} />
               {social.name}
             </SocialMediaLink>
           </SocialMediaItem>
