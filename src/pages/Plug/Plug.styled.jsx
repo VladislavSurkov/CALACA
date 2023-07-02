@@ -4,7 +4,7 @@ import backgroundMobile from "../../img/bg/bg-mobile.png";
 
 export const PlugContainer = styled.div`
   position: relative;
-  z-index: -2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +26,7 @@ export const Logo = styled.img`
   height: 70px;
 
   margin-top: 42px;
+  z-index: 2;
 
   @media (min-width: 468px) {
     width: 190px;
@@ -52,6 +53,7 @@ export const Title = styled.h1`
   text-align: center;
   max-width: 1200px;
   margin-top: 48px;
+  z-index: 2;
 
   color: #eee3ff;
 
@@ -67,7 +69,6 @@ export const Title = styled.h1`
     font-size: 108px;
     line-height: 0.9;
   }
-
 `;
 
 export const SubTitle = styled.h2`
@@ -79,6 +80,7 @@ export const SubTitle = styled.h2`
   margin: 0;
   padding-left: 28px;
   margin-top: 40px;
+  z-index: 2;
 
   color: #eee3ff;
   @media (min-width: 468px) {

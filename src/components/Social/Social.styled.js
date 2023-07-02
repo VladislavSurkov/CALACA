@@ -9,6 +9,7 @@ export const SocialMediaList = styled.ul`
   width: 346px;
   height: 88px;
   margin-top: 60px;
+  z-index: 3;
 
   @media screen and (max-width: 467px) {
     position: absolute;
