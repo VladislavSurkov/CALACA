@@ -88,7 +88,7 @@ const SIDE = {
     transform: translate(-50%, -50%);
 
     @media (min-width: 468px) {
-      top: 5%;
+      top: 6%;
       left: 17.8%;
     }
 
@@ -105,7 +105,7 @@ const SIDE = {
     transform: translate(-50%, -50%);
 
     @media (min-width: 468px) {
-      top: 5%;
+      top: 6%;
       left: 77%;
     }
 
@@ -128,7 +128,7 @@ const IMAGE = {
 export const AnimationContainer = styled.div`
   position: absolute;
   bottom: 0%;
-  z-index: -1;
+  z-index: 1;
   width: 390px;
   height: 483px;
 
@@ -178,6 +178,11 @@ export const Flag = styled.div`
   background-repeat: no-repeat;
 
   @media (min-width: 468px) {
+    width: 80px;
+    height: 140px;
+  }
+
+  @media (min-height: 1080px) {
     width: 100px;
     height: 160px;
   }
