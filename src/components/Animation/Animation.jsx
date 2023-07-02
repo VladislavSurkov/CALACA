@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FireComp, AnimationContainer } from "./Animation.styled";
+import { FireComp, AnimationContainer, Flag } from "./Animation.styled";
 
 const Animation = () => {
   const [containerWidth, setContainerWidth] = useState(window.innerWidth);
@@ -21,8 +21,10 @@ const Animation = () => {
 
   return (
     <AnimationContainer width={containerWidth}>
-      <FireComp position="center" image="first" />
+      <Flag side="left" />
+      <Flag side="right" />
 
+      <FireComp position="center" image="first" />
       {shouldShowFirstImages && (
         <>
           <FireComp position="firstLeft" image="second" />
