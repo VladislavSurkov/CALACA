@@ -9,11 +9,11 @@ export const SocialMediaList = styled.ul`
   width: 346px;
   height: 88px;
   margin-top: 60px;
-  
 
-  @media screen and (max-width: 468px) {
+  @media screen and (max-width: 467px) {
     position: absolute;
     bottom: 28px;
+    margin-top: 0;
   }
 `;
 
