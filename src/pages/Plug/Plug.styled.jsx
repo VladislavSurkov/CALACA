@@ -4,23 +4,20 @@ import backgroundMobile from "../../img/bg/bg-mobile.png";
 
 export const PlugContainer = styled.div`
   position: relative;
+  z-index: -2;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 100vh;
 
   background-image: url(${backgroundMobile});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 
-  @media (max-width: 415px), (min-width: 467px) {
-    overflow: hidden;
-  }
   @media (min-width: 468px) {
     background-image: url(${backgroundDesktop});
-    /* height: 1080px; */
   }
 `;
 

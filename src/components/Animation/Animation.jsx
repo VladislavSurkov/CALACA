@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { FireComp, FireContainer } from "./Fire.styled";
+import { FireComp, AnimationContainer } from "./Animation.styled";
 
-const Fire = () => {
+const Animation = () => {
   const [containerWidth, setContainerWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -19,10 +19,8 @@ const Fire = () => {
   const shouldShowSecondImages = containerWidth >= 741;
   const shouldShowFirstImages = containerWidth >= 601;
 
-
-
   return (
-    <FireContainer>
+    <AnimationContainer width={containerWidth}>
       <FireComp position="center" image="first" />
 
       {shouldShowFirstImages && (
@@ -41,8 +39,8 @@ const Fire = () => {
 
       <FireComp position="thirdLeft" image="second" />
       <FireComp position="thirdRight" image="first" />
-    </FireContainer>
+    </AnimationContainer>
   );
 };
 
-export default Fire;
+export default Animation;
