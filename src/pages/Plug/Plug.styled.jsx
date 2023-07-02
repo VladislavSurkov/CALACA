@@ -30,12 +30,16 @@ export const Logo = styled.img`
   @media (min-width: 468px) {
     width: 190px;
     height: 90px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   @media (min-width: 920px) {
     width: 210px;
     height: 100px;
+  }
+
+  @media (min-height: 1080px) {
+    margin-top: 50px;
   }
 `;
 
@@ -60,9 +64,10 @@ export const Title = styled.h1`
 
   @media (min-width: 920px) {
     font-weight: 400;
-    font-size: 118px;
+    font-size: 108px;
     line-height: 0.9;
   }
+
 `;
 
 export const SubTitle = styled.h2`

@@ -16,8 +16,6 @@ const Animation = () => {
     };
   }, []);
 
-  const shouldShowSecondImages = containerWidth >= 741;
-  const shouldShowFirstImages = containerWidth >= 601;
 
   return (
     <AnimationContainer width={containerWidth}>
@@ -25,19 +23,19 @@ const Animation = () => {
       <Flag side="right" />
 
       <FireComp position="center" image="first" />
-      {shouldShowFirstImages && (
-        <>
+     
+        
           <FireComp position="firstLeft" image="second" />
           <FireComp position="firstRight" image="first" />
-        </>
-      )}
+      
+     
 
-      {shouldShowSecondImages && (
-        <>
+    
+      
           <FireComp position="secondLeft" image="first" />
           <FireComp position="secondRight" image="second" />
-        </>
-      )}
+       
+     
 
       <FireComp position="thirdLeft" image="second" />
       <FireComp position="thirdRight" image="first" />

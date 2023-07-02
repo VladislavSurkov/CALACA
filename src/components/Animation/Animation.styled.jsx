@@ -23,14 +23,21 @@ const POSITION = {
     @media (min-width: 468px) {
       width: 350px;
       height: 350px;
-      top: 35%;
+      top: 32.4%;
       left: 49%;
+    }
+    @media (min-height: 1080px) {
+      top: 35%;
     }
   `,
   firstLeft: css`
-    top: 34.5%;
+    top: 32%;
     left: 19%;
     transform: translate(-50%, -50%) rotateY(40deg);
+
+    @media (min-height: 1080px) {
+      top: 34.5%;
+    }
   `,
   secondLeft: css`
     top: 43%;
@@ -38,9 +45,13 @@ const POSITION = {
     transform: translate(-50%, -50%) rotateY(60deg);
   `,
   firstRight: css`
-    top: 34.5%;
+    top: 32%;
     left: 81.5%;
     transform: translate(-50%, -50%) rotateY(40deg);
+
+    @media (min-height: 1080px) {
+      top: 34.5%;
+    }
   `,
   secondRight: css`
     top: 49%;
@@ -77,6 +88,11 @@ const SIDE = {
     transform: translate(-50%, -50%);
 
     @media (min-width: 468px) {
+      top: 5%;
+      left: 17.8%;
+    }
+
+    @media (min-height: 1080px) {
       top: 9%;
       left: 18%;
     }
@@ -89,6 +105,11 @@ const SIDE = {
     transform: translate(-50%, -50%);
 
     @media (min-width: 468px) {
+      top: 5%;
+      left: 77%;
+    }
+
+    @media (min-height: 1080px) {
       top: 9%;
       left: 77.3%;
     }
@@ -98,7 +119,6 @@ const SIDE = {
 const IMAGE = {
   first: css`
     background-image: url(${firea});
-    
   `,
   second: css`
     background-image: url(${fireb});
@@ -129,18 +149,25 @@ export const AnimationContainer = styled.div`
 
   @media (min-width: 468px) {
     background-image: url(${flagWeb2}), url(${flagWeb3}), url(${arenaDesk});
+    background-size: 128px 86px, 128px 86px, cover;
+    background-position: top 0% left 4%, top 0% left 95.5%, center;
+
+    width: 961px;
+    height: 508px;
+  }
+
+  /* @media screen and (min-width: 468px) and (max-width: 980px) {
+    width: ${(props) => props.width}px;
+    height: ${(props) => props.width - 200}px;
+  } */
+
+  @media (min-height: 1080px) {
     background-size: 131px 89px, 131px 89px, cover;
     background-position: top 5.5% left 4%, top 5.5% left 95.5%, center;
 
     width: 1092px;
     height: 639px;
   }
-
-  /* @media screen and (min-width: 468px) and (max-width: 767px) {
-    background-image: url(${flagWeb2}), url(${flagWeb3}), url(${arenaDesk});
-    width: ${(props) => props.width}px;
-    height: ${(props) => 453 - props.width}px;
-  } */
 `;
 
 export const Flag = styled.div`
