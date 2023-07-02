@@ -1,4 +1,6 @@
 import styled, { css } from "styled-components";
+import arenaDesk from "../../img/bg/arena-desktop.png";
+import arenaMobile from "../../img/bg/arena-mobile.png";
 import firea from "../../img/animation/firea.png";
 import fireb from "../../img/animation/fireb.png";
 
@@ -6,13 +8,9 @@ const POSITION = {
   center: css`
     width: 200px;
     height: 200px;
-    top: 55%;
+    top: 21%;
     left: 49.5%;
     transform: translate(-50%, -50%);
-
-    @media (max-width: 415px), (min-width: 468px) {
-      top: 1%;
-    }
 
     @media (min-width: 468px) {
       width: 350px;
@@ -40,14 +38,9 @@ const POSITION = {
     transform: translate(-50%, -50%) rotateY(60deg);
   `,
   thirdLeft: css`
-    bottom: 12.3%;
+    top: 47%;
     left: 9%;
     transform: translate(-50%, -50%) rotateY(30deg);
-
-    @media (max-width: 415px), (min-width: 468px) {
-      bottom: 6%;
-      left: 4%;
-    }
 
     @media (min-width: 468px) {
       top: 64%;
@@ -55,14 +48,9 @@ const POSITION = {
     }
   `,
   thirdRight: css`
-    bottom: 10.6%;
+    top: 50%;
     left: 81%;
     transform: translate(-50%, -50%) rotateY(30deg);
-
-    @media (max-width: 415px), (min-width: 468px) {
-      bottom: 0%;
-      left: 84%;
-    }
 
     @media (min-width: 468px) {
       top: 74%;
@@ -80,20 +68,32 @@ const IMAGE = {
   `,
 };
 
-export const FireContainer = styled.div`
-  bottom: 11.5%;
-  width: 370px;
-  height: 310px;
+export const AnimationContainer = styled.div`
+  position: absolute;
+  bottom: 0%;
+  z-index: -1;
+  width: 390px;
+  height: 483px;
 
-  @media (max-width: 415px), (min-width: 468px) {
-    position: absolute;
+  background-image: url(${arenaMobile});
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  @media (min-width: 390px) and (max-width: 468px) {
+    width: ${(props) => props.width}px;
+    height: ${(props) =>  93 + props.width}px;
   }
 
-  @media (min-width: 467px) {
-    bottom: 10%;
-    width: 860px;
+  @media (min-width: 468px) {
+    background-image: url(${arenaDesk});
+    width: 1092px;
+    height: 639px;
   }
 `;
+
+
 export const FireComp = styled.div`
   position: absolute;
 
