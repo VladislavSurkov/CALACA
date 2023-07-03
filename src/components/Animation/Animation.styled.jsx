@@ -26,7 +26,7 @@ const POSITION = {
       top: 32.4%;
       left: 49%;
     }
-    @media (min-height: 1080px) {
+    @media (min-height: 1080px) and (min-width: 468px) {
       top: 35%;
     }
   `,
@@ -35,7 +35,7 @@ const POSITION = {
     left: 19%;
     transform: translate(-50%, -50%) rotateY(40deg);
 
-    @media (min-height: 1080px) {
+    @media (min-height: 1080px) and (min-width: 468px) {
       top: 34.5%;
     }
   `,
@@ -49,7 +49,7 @@ const POSITION = {
     left: 81.5%;
     transform: translate(-50%, -50%) rotateY(40deg);
 
-    @media (min-height: 1080px) {
+    @media (min-height: 1080px) and (min-width: 468px) {
       top: 34.5%;
     }
   `,
@@ -92,7 +92,7 @@ const SIDE = {
       left: 17.8%;
     }
 
-    @media (min-height: 1080px) {
+    @media (min-height: 1080px) and (min-width: 468px) {
       top: 9%;
       left: 18%;
     }
@@ -109,7 +109,7 @@ const SIDE = {
       left: 77%;
     }
 
-    @media (min-height: 1080px) {
+    @media (min-height: 1080px) and (min-width: 468px) {
       top: 9%;
       left: 77.3%;
     }
@@ -156,12 +156,7 @@ export const AnimationContainer = styled.div`
     height: 508px;
   }
 
-  /* @media screen and (min-width: 468px) and (max-width: 980px) {
-    width: ${(props) => props.width}px;
-    height: ${(props) => props.width - 200}px;
-  } */
-
-  @media (min-height: 1080px) {
+  @media (min-height: 1080px) and (min-width: 468px) {
     background-size: 131px 89px, 131px 89px, cover;
     background-position: top 5.5% left 4%, top 5.5% left 95.5%, center;
 
@@ -182,7 +177,7 @@ export const Flag = styled.div`
     height: 140px;
   }
 
-  @media (min-height: 1080px) {
+  @media (min-height: 1080px) and (min-width: 468px) {
     width: 100px;
     height: 160px;
   }

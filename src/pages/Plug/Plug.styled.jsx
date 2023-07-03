@@ -16,6 +16,10 @@ export const PlugContainer = styled.div`
   background-position: center;
   overflow: hidden;
 
+  @media (min-width: 415px) {
+    height: 1090px;
+  }
+
   @media (min-width: 468px) {
     background-image: url(${backgroundDesktop});
     height: 100vh;
