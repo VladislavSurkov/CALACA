@@ -8,7 +8,7 @@ export const PlugContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 1040px;
 
   background-image: url(${backgroundMobile});
   background-size: cover;
@@ -18,6 +18,7 @@ export const PlugContainer = styled.div`
 
   @media (min-width: 468px) {
     background-image: url(${backgroundDesktop});
+    height: 100vh;
   }
 `;
 
