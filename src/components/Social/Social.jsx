@@ -5,7 +5,7 @@ import {
 } from "./Social.styled";
 import tg from "../../img/social/tg.png";
 import dis from "../../img/social/dis.png";
-import twi from "../../img/social/twi.png";
+import twit from "../../img/social/twit.png";
 import tree from "../../img/social/tree.png";
 
 const socials = [
@@ -21,7 +21,7 @@ const socials = [
   },
   {
     name: "TWITTER",
-    img: twi,
+    img: twit,
     link: "http://localhost:3000/CALACA",
   },
   {
