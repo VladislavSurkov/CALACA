@@ -8,13 +8,11 @@ export const SocialMediaList = styled.ul`
   align-items: center;
   width: 346px;
   height: 88px;
-  margin-top: 60px;
-  z-index: 3;
+  margin-top: 20px;
+  z-index: 2;
 
-  @media screen and (max-width: 467px) {
-    position: absolute;
-    bottom: 28px;
-    margin-top: 0;
+  @media screen and (min-width: 468px) {
+    margin-top: 60px;
   }
 `;
 
