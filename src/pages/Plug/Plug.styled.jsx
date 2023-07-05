@@ -8,7 +8,7 @@ export const PlugContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1040px;
+  height: 1045px;
 
   background-image: url(${backgroundMobile});
   background-size: cover;
@@ -20,7 +20,7 @@ export const PlugContainer = styled.div`
     height: 1090px;
   }
 
-  @media (min-width: 468px) {
+  @media (min-width: 568px) {
     background-image: url(${backgroundDesktop});
     height: 100vh;
   }
@@ -30,21 +30,19 @@ export const Logo = styled.img`
   width: 140px;
   height: 70px;
 
-  margin-top: 42px;
+  margin-top: 40px;
   z-index: 2;
 
-  @media (min-width: 468px) {
-    width: 190px;
-    height: 90px;
-    margin-top: 20px;
+  @media (min-width: 568px) {
+    margin-top: 15px;
   }
 
-  @media (min-width: 920px) {
+  @media (min-height: 920px) and (min-width: 920px) {
     width: 210px;
     height: 100px;
   }
 
-  @media (min-height: 1080px) {
+  @media (min-height: 1080px) and (min-width: 920px) {
     margin-top: 50px;
   }
 `;
@@ -62,17 +60,21 @@ export const Title = styled.h1`
 
   color: #eee3ff;
 
-  @media (min-width: 468px) {
-    font-weight: 400;
+  @media (min-width: 568px) {
     font-size: 80px;
     line-height: 0.9;
     margin-top: 50px;
   }
 
   @media (min-width: 920px) {
-    font-weight: 400;
     font-size: 108px;
     line-height: 0.9;
+  }
+
+  @media (max-height: 920px) and (min-width: 568px) {
+    font-size: 64px;
+    max-width: 857px;
+    margin-top: 15px;
   }
 `;
 
@@ -98,5 +100,9 @@ export const SubTitle = styled.h2`
   @media (min-width: 920px) {
     letter-spacing: 30px;
     font-size: 36px;
+  }
+  @media (max-height: 920px) and (min-width: 568px) {
+    font-size: 16px;
+    margin-top: 15px;
   }
 `;

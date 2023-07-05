@@ -20,13 +20,13 @@ const POSITION = {
     left: 49.5%;
     transform: translate(-50%, -50%);
 
-    @media (min-width: 468px) {
+    @media (min-width: 568px) {
       width: 350px;
       height: 350px;
       top: 32.4%;
       left: 49%;
     }
-    @media (min-height: 1080px) and (min-width: 468px) {
+    @media (min-height: 1080px) and (min-width: 568px) {
       top: 35%;
     }
   `,
@@ -35,7 +35,7 @@ const POSITION = {
     left: 19%;
     transform: translate(-50%, -50%) rotateY(40deg);
 
-    @media (min-height: 1080px) and (min-width: 468px) {
+    @media (min-height: 1080px) and (min-width: 568px) {
       top: 34.5%;
     }
   `,
@@ -49,7 +49,7 @@ const POSITION = {
     left: 81.5%;
     transform: translate(-50%, -50%) rotateY(40deg);
 
-    @media (min-height: 1080px) and (min-width: 468px) {
+    @media (min-height: 1080px) and (min-width: 568px) {
       top: 34.5%;
     }
   `,
@@ -63,7 +63,7 @@ const POSITION = {
     left: 9%;
     transform: translate(-50%, -50%) rotateY(30deg);
 
-    @media (min-width: 468px) {
+    @media (min-width: 568px) {
       top: 64.5%;
       left: 27.5%;
     }
@@ -73,7 +73,7 @@ const POSITION = {
     left: 81%;
     transform: translate(-50%, -50%) rotateY(30deg);
 
-    @media (min-width: 468px) {
+    @media (min-width: 568px) {
       top: 68%;
       left: 66%;
     }
@@ -87,12 +87,12 @@ const SIDE = {
     left: 11%;
     transform: translate(-50%, -50%);
 
-    @media (min-width: 468px) {
+    @media (min-width: 568px) {
       top: 6%;
       left: 17.8%;
     }
 
-    @media (min-height: 1080px) and (min-width: 468px) {
+    @media (min-height: 1080px) and (min-width: 568px) {
       top: 9%;
       left: 18%;
     }
@@ -104,12 +104,12 @@ const SIDE = {
     left: 84.5%;
     transform: translate(-50%, -50%);
 
-    @media (min-width: 468px) {
+    @media (min-width: 568px) {
       top: 6%;
       left: 77%;
     }
 
-    @media (min-height: 1080px) and (min-width: 468px) {
+    @media (min-height: 1080px) and (min-width: 568px) {
       top: 9%;
       left: 77.3%;
     }
@@ -138,7 +138,7 @@ export const AnimationContainer = styled.div`
 
   background-repeat: no-repeat;
 
-  @media (min-width: 390px) and (max-width: 467px) {
+  @media (min-width: 390px) and (max-width: 567px) {
     width: ${(props) => props.width}px;
     height: ${(props) => 93 + props.width}px;
 
@@ -147,7 +147,11 @@ export const AnimationContainer = styled.div`
       ${(props) => props.width / 6}px ${(props) => props.width / 9}px, cover;
   }
 
-  @media (min-width: 468px) {
+  @media (min-width: 440px) {
+    background-position: top 10% left 6%, top 10% right 6%, center;
+  }
+
+  @media (min-width: 568px) {
     background-image: url(${flagWeb2}), url(${flagWeb3}), url(${arenaDesk});
     background-size: 128px 86px, 128px 86px, cover;
     background-position: top 0% left 4%, top 0% left 95.5%, center;
@@ -156,7 +160,7 @@ export const AnimationContainer = styled.div`
     height: 508px;
   }
 
-  @media (min-height: 1080px) and (min-width: 468px) {
+  @media (min-height: 1080px) and (min-width: 568px) {
     background-size: 131px 89px, 131px 89px, cover;
     background-position: top 5.5% left 4%, top 5.5% left 95.5%, center;
 
@@ -172,12 +176,12 @@ export const Flag = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (min-width: 468px) {
+  @media (min-width: 568px) {
     width: 80px;
     height: 140px;
   }
 
-  @media (min-height: 1080px) and (min-width: 468px) {
+  @media (min-height: 1080px) and (min-width: 568px) {
     width: 100px;
     height: 160px;
   }
@@ -194,7 +198,7 @@ export const FireComp = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (min-width: 468px) {
+  @media (min-width: 568px) {
     width: 250px;
     height: 250px;
   }

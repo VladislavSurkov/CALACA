@@ -16,7 +16,7 @@ const Animation = () => {
     };
   }, []);
 
-  const shouldShowFire = containerWidth >= 469;
+  const shouldShowFire = containerWidth >= 568;
 
   return (
     <AnimationContainer width={containerWidth}>
