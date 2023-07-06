@@ -26,11 +26,10 @@ export const SocialMediaItem = styled.li`
       margin-right: 50px;
     }
   }
-  transition: all 400ms ease-in-out;
+  transition: all 100ms ease-in-out;
 
   &:hover {
-    transform: scale(1.1);
-    text-shadow: 1px 1px 1px black;
+    transform: scale(1.05);
   }
 `;
 
@@ -41,7 +40,7 @@ export const SocialMediaLink = styled.a`
   font-family: "Roboto Condensed";
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff50;
+  color: #ffffff70;
 
   width: 64px;
   height: 64px;
