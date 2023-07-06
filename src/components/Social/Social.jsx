@@ -12,22 +12,22 @@ const socials = [
   {
     name: "TELEGRAM",
     img: tg,
-    link: "http://localhost:3000/CALACA",
+    link: "#",
   },
   {
     name: "DISCORD",
     img: dis,
-    link: "http://localhost:3000/CALACA",
+    link: "#",
   },
   {
     name: "TWITTER",
     img: twit,
-    link: "http://localhost:3000/CALACA",
+    link: "#",
   },
   {
     name: "LINKTREE",
     img: tree,
-    link: "http://localhost:3000/CALACA",
+    link: "#",
   },
 ];
 
